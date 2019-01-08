@@ -1,0 +1,53 @@
+$background_color: blue;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background_color;
+    
+}
+
+.App {
+    background-color: $background_color;
+     display: flex;
+     justify-content: center;
+     align-content: center;
+}
+
+.outer-container {
+    width: 50%;
+    background-color: white;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    padding: 2rem;
+
+    .header H1 {
+        padding-bottom: 1rem;
+    }
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-align: left;
+    }
+
+    .row-container {
+        padding: 1rem 0;
+        display: flex;
+        padding: 1rem;
+        
+        label {
+            padding-right: 1rem;
+            text-align: left;
+            flex: 1;
+        }
+        input {
+            flex: 2;
+        }
+
+    }
+
+}

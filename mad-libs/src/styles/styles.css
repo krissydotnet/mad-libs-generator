@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blue;
+}
+
+.App {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.outer-container {
+  width: 50%;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 1rem 0;
+  padding: 2rem;
+}
+.outer-container .header H1 {
+  padding-bottom: 1rem;
+}
+.outer-container p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+}
+.outer-container .row-container {
+  padding: 1rem 0;
+  display: flex;
+  padding: 1rem;
+}
+.outer-container .row-container label {
+  padding-right: 1rem;
+  text-align: left;
+  flex: 1;
+}
+.outer-container .row-container input {
+  flex: 2;
+}
+
+/*# sourceMappingURL=styles.css.map */
