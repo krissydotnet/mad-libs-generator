@@ -1,4 +1,5 @@
-$background_color: blue;
+$background_color: #0E97A7;
+$highlight_color: #FBE34D;
 
 * {
     margin: 0;
@@ -32,6 +33,11 @@ body {
         font-size: 1.5rem;
         line-height: 2rem;
         text-align: left;
+
+        .highlight {
+            font-weight: bold;
+            background-color: $highlight_color;
+        }
     }
 
     .row-container {

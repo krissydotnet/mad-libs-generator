@@ -5,11 +5,11 @@
 }
 
 body {
-  background-color: blue;
+  background-color: #0E97A7;
 }
 
 .App {
-  background-color: blue;
+  background-color: #0E97A7;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -29,6 +29,10 @@ body {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: left;
+}
+.outer-container p .highlight {
+  font-weight: bold;
+  background-color: #FBE34D;
 }
 .outer-container .row-container {
   padding: 1rem 0;
