@@ -30,6 +30,7 @@ class App extends Component {
    loadStory = () => {
     
      let index = Math.floor(Math.random() * stories.length);
+     index = 3;
      let story = stories[index];
 
     this.setState({
@@ -92,7 +93,7 @@ class App extends Component {
     if (!this.state.isSubmitted) {
       return (
         <div className="App">
-        <Words words={this.state.inputs} saveData={this.handleSaveData} />
+        <Words words={this.state.inputs} saveData={this.handleSaveData} title={this.state.story.title} />
       </div>
       );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Word from './Word';
+import Header from './Header';
 
 class Words extends Component {
 
@@ -16,6 +17,7 @@ class Words extends Component {
         }
         return (
          <div className="outer-container">
+         <Header title={this.props.title} />
             <form onSubmit={handleSubmit}>
             {this.props.words.map( word => {
 

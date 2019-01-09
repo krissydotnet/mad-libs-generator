@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Word extends Component {
     render(props) {
         return (

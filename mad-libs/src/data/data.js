@@ -29,6 +29,21 @@ said the wolf.  "And, Grandmother," she said, "what big {{pluralnoun}} you have.
     stash a/an {{noun}} in yer pants, and keep a/an {{noun}} perched atop yer {{part-of-body}}.  Aye, now
     ye be a real pirate!
     `
+},
+{
+  title: "New Year's Resolutions",
+  text: `I resolve that in the next year I will eat all of my {{pluralnoun}}, just 
+  like my mother says.  I promise to help bathe my pet {{noun}} and help {{verb}} the
+  dishes after dinner.<br/>
+  I will not eat any {{food}} that contains cholesterol or {{pluralnoun}}.  I will be polite
+  and thoughtful, and will clear the {{pluralnoun}} after meals.  I will do a/an {{adjective}}
+  deed every day.  I will be polite to any {{pluralnoun}} who are older than I am.  And I will never,
+  ever {{verb}} my dog's tail or pour {{liquid}} on my cat.<br/>
+  I will also try to brush my {{part-of-body-plural}} and shine my {{clothing-plural}} every day.
+  I promise to be really {{adjective}} so I can live {{adverb}} for the next twelve months.  Then
+  I'll be a truly happy, {{adjective}} person.
+  `
+
 }
 ];
 export const questions = {
@@ -45,5 +60,8 @@ export const questions = {
   'noun' : 'Noun',
   'animal-plural': 'Animal (plural)',
   'place': 'A place',
-  'number': 'Number'
+  'number': 'Number',
+  'food': 'Type of food',
+  'liquid': 'Type of liquid',
+  'clothing-plural': 'Article of clothing (plural)'
 }
