@@ -65,3 +65,10 @@ export const questions = {
   'liquid': 'Type of liquid',
   'clothing-plural': 'Article of clothing (plural)'
 }
+export const ref = {
+  author: "Roger Price & Leonard Stern",
+  title: "Best of Mad Libs",
+  published:  2008,
+  publisher:  "Penguin Random House"
+
+}

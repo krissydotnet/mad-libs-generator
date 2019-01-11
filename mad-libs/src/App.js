@@ -5,7 +5,9 @@ import './styles/styles.css';
 
 import Words from './components/Words';
 import Display from './components/Display';
-import { stories, questions } from './data/data';
+import Footer from './components/Footer';
+import { stories, questions, ref } from './data/data';
+
 
 
 
@@ -20,7 +22,8 @@ class App extends Component {
       isSubmitted: false,
       story: '',
       index: 0,
-      inputs: []
+      inputs: [],
+      ref: {}
     }
   
     componentDidMount() {
@@ -30,13 +33,14 @@ class App extends Component {
    loadStory = () => {
     
      let index = Math.floor(Math.random() * stories.length);
-     index = 3;
+    //  index = 3;
      let story = stories[index];
 
     this.setState({
       story: story,
       index: index,
-      inputs: [...this.generateQuestions(story.text)]
+      inputs: [...this.generateQuestions(story.text)],
+      ref: ref
     });
     
 
@@ -90,23 +94,23 @@ class App extends Component {
 
 
   render() {
-    if (!this.state.isSubmitted) {
-      return (
-        <div className="App">
-        <Words words={this.state.inputs} saveData={this.handleSaveData} title={this.state.story.title} />
-      </div>
-      );
-
+    let content;
+    if (!this.state.isSubmitted)  {
+      content =  <Words words={this.state.inputs} saveData={this.handleSaveData} title={this.state.story.title} /> 
     } else {
-
-        const answers = ReactHtmlParser(this.loadAnswers());
-
-      return (
-        <div className="App">
-        <Display text={answers} title={this.state.story.title}/> 
-        </div>
-      );
+      const answers = ReactHtmlParser(this.loadAnswers());
+      content = <Display text={answers} title={this.state.story.title}/> 
     }
+    console.log(this.state.ref);
+    return (
+      <div className="App">
+      <div className="wrapper">
+          {content}
+          <Footer {...this.state.ref} />
+      </div>
+      </div>
+    )
+       
 
   }
 }

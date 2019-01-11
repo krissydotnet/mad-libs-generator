@@ -8,44 +8,55 @@ body {
   background-color: #0E97A7;
 }
 
-.App {
-  background-color: #0E97A7;
+.wrapper {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
 }
-
-.outer-container {
-  width: 50%;
+.wrapper .outer-container {
   background-color: white;
   border-radius: 2rem;
   margin: 1rem 0;
   padding: 2rem;
+  max-width: 50rem;
+  width: 100%;
 }
-.outer-container .header H1 {
+.wrapper .outer-container .header H1 {
   padding-bottom: 1rem;
 }
-.outer-container p {
+.wrapper .outer-container p {
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: left;
 }
-.outer-container p .highlight {
+.wrapper .outer-container p .highlight {
   font-weight: bold;
   background-color: #FBE34D;
 }
-.outer-container .row-container {
+.wrapper .outer-container .row-container {
   padding: 1rem 0;
   display: flex;
   padding: 1rem;
 }
-.outer-container .row-container label {
+.wrapper .outer-container .row-container label {
   padding-right: 1rem;
   text-align: left;
   flex: 1;
+  font-size: 1.5rem;
 }
-.outer-container .row-container input {
+.wrapper .outer-container .row-container input {
   flex: 2;
+  font-size: 1.5rem;
+}
+.wrapper .outer-container button {
+  border-radius: 1rem;
+  border-style: none;
+  font-size: 1.5rem;
+  padding: 0.75rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
